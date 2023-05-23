@@ -5,6 +5,10 @@
   src: url(./font/butler/Butler/Butler_Regular.otf) format('otf');
 }
 
+:root {
+  --color-accent: #f8b191;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -13,8 +17,46 @@ body {
 .navbar-brand {
   font-size: 1.5rem;
   font-family: 'Butler';
+  margin-left: 20px;
 }
 
 #navbarNav {
   justify-content: end;
+  margin-right: 50px;
+}
+
+/* Hero Section */
+
+#hero {
+  margin: 30px;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+.hero-speach {
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Butler';
+  font-weight: 800;
+}
+
+#top-coffee {
+  max-height: 800px;
+}
+
+#hero .btn {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  border-radius: 3px;
+}
+
+#hero .btn:hover {
+  color: white;
+  background-color: var(--color-accent);
 }
